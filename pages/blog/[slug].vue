@@ -48,7 +48,7 @@ useHead({
           url: "https://caldef.app",
           logo: {
             "@type": "ImageObject",
-            url: "https://caldef.app/favicon.ico",
+            url: "https://caldef.app/favicon.png",
           },
         },
         mainEntityOfPage: {
