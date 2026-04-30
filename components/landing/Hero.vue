@@ -8,7 +8,7 @@ const features = [
   { icon: "⚖️", text: "Calorie Deficit Planner" },
   { icon: "📊", text: "Weight Tracker" },
   { icon: "💡", text: "Personalized Tips" },
-  { icon: "🌍", text: "Culturally Aware" },
+  { icon: "📋", text: "Create your own meal plan or let AI do it" },
 ];
 </script>
 
