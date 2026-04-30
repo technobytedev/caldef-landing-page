@@ -17,6 +17,18 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "theme-color", content: "#4ADE80" },
       ],
+      script: [
+        {
+          async: true,
+          src: "https://www.googletagmanager.com/gtag/js?id=G-GEZYBVST57",
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GEZYBVST57');`,
+        },
+      ],
       link: [
         { rel: "icon", type: "image/png", href: "/favicon.png" },
         { rel: "apple-touch-icon", href: "/favicon.png" },
