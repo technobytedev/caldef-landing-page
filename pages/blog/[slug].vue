@@ -137,9 +137,86 @@ const PLAY_STORE_URL =
             class="flex items-start gap-3 text-text-light"
           >
             <span class="mt-1.5 w-2 h-2 bg-accent rounded-full shrink-0"></span>
-            <span>{{ item }}</span>
+            <span v-html="item"></span>
           </li>
         </ul>
+
+        <!-- Numbered list -->
+        <ol
+          v-else-if="section.type === 'numbered-list'"
+          class="list-none flex flex-col gap-3 pl-1"
+        >
+          <li
+            v-for="(item, idx) in section.items"
+            :key="item"
+            class="flex items-start gap-3 text-text-light"
+          >
+            <span
+              class="shrink-0 w-6 h-6 rounded-full bg-accent/20 text-accent font-bold text-xs flex items-center justify-center mt-0.5"
+            >{{ idx + 1 }}</span>
+            <span v-html="item"></span>
+          </li>
+        </ol>
+
+        <!-- Table -->
+        <div
+          v-else-if="section.type === 'table'"
+          class="overflow-x-auto my-2"
+        >
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="bg-light-card2">
+                <th
+                  v-for="header in section.headers"
+                  :key="header"
+                  class="text-left px-4 py-3 font-semibold text-text-light border border-light-border first:rounded-tl-lg last:rounded-tr-lg"
+                >
+                  {{ header }}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="(row, ri) in section.rows"
+                :key="ri"
+                class="border-b border-light-border hover:bg-light-card2/50 transition-colors"
+              >
+                <td
+                  v-for="(cell, ci) in row"
+                  :key="ci"
+                  class="px-4 py-3 text-muted border-x border-light-border first:font-medium first:text-text-light"
+                >
+                  {{ cell }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Callout / warning -->
+        <div
+          v-else-if="section.type === 'callout'"
+          class="bg-warn-light/10 border border-warn-light/40 rounded-xl px-5 py-4 text-sm text-text-light leading-relaxed"
+          v-html="section.html"
+        ></div>
+
+        <!-- Feature list -->
+        <div
+          v-else-if="section.type === 'feature-list'"
+          class="grid sm:grid-cols-2 gap-4 my-2"
+        >
+          <div
+            v-for="item in section.items"
+            :key="item.title"
+            class="bg-light-card2 border border-light-border rounded-xl p-4 flex gap-3"
+          >
+            <span class="text-2xl shrink-0">{{ item.icon }}</span>
+            <div>
+              <p class="font-semibold text-text-light text-sm">{{ item.title }}</p>
+              <p class="text-muted text-xs mt-1 leading-relaxed">{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
 
         <!-- CTA block -->
         <div
