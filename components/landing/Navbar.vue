@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue';
+
 const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.cedricdev.diettracker";
 
@@ -7,6 +9,7 @@ const menuitems = [
   { title: "How It Works", path: "#how-it-works" },
   { title: "Reviews", path: "#reviews" },
   { title: "Blog", path: "/blog" },
+  { title: "BMI Calculator", path: "/bmi-calculator" },
 ];
 
 const open = ref(false);
