@@ -5,11 +5,12 @@ const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.cedricdev.diettracker";
 
 const menuitems = [
-  { title: "Features", path: "#features" },
-  { title: "How It Works", path: "#how-it-works" },
-  { title: "Reviews", path: "#reviews" },
+  // { title: "Features", path: "#features" },
+  // { title: "How It Works", path: "#how-it-works" },
+  // { title: "Reviews", path: "#reviews" },
   { title: "Blog", path: "/blog" },
   { title: "BMI Calculator", path: "/bmi-calculator" },
+  { title: "Calorie Deficit Calculator", path: "/calorie-deficit-calculator" },
 ];
 
 const open = ref(false);
@@ -69,7 +70,7 @@ const open = ref(false);
             rel="noopener"
             class="flex-1 inline-flex items-center justify-center gap-2 bg-text-light text-light-bg px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
           >
-            Download Free
+           Download Caldef on Play Store
           </a>
         </div>
       </nav>
@@ -80,12 +81,8 @@ const open = ref(false);
           rel="noopener"
           class="inline-flex items-center gap-2 bg-text-light text-light-bg px-5 py-2.5 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
         >
-          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M3.18 23.76c.37.21.8.24 1.2.07l12.84-7.26-2.88-2.88-11.16 10.07zm-1.5-20.5v17.48c0 .55.28 1.03.72 1.32L14.46 12 2.4 2.44c-.44.3-.72.78-.72 1.32zm18.54 8.36L17.1 9.22 14.46 12l2.64 2.78 2.12-1.2c.6-.34.95-.95.95-1.58s-.35-1.24-.95-1.58zM4.38.17c-.4-.17-.83-.14-1.2.07l11.28 10.14 2.88-2.88L4.38.17z"
-            />
-          </svg>
-          Download Free
+          <img src="/google-play-icon.png" alt="Google Play" class="w-4 h-4 shrink-0" />
+          Download Caldef on Play Store
         </a>
       </div>
     </header>

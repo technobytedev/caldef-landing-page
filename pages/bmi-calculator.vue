@@ -360,17 +360,15 @@ const categoryInfo = computed(() => (bmi.value ? getCategory(bmi.value) : null))
           href="https://play.google.com/store/apps/details?id=com.cedricdev.diettracker"
           target="_blank"
           rel="noopener"
-          class="inline-flex items-center gap-3 bg-text-light text-light-bg px-8 py-4 rounded-xl hover:opacity-90 transition-opacity font-medium shadow-lg"
+          class="inline-flex items-center gap-3 bg-accent text-dark-bg px-8 py-4 rounded-xl hover:opacity-90 transition-opacity font-medium shadow-lg"
         >
-          <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M3.18 23.76c.37.21.8.24 1.2.07l12.84-7.26-2.88-2.88-11.16 10.07zm-1.5-20.5v17.48c0 .55.28 1.03.72 1.32L14.46 12 2.4 2.44c-.44.3-.72.78-.72 1.32zm18.54 8.36L17.1 9.22 14.46 12l2.64 2.78 2.12-1.2c.6-.34.95-.95.95-1.58s-.35-1.24-.95-1.58zM4.38.17c-.4-.17-.83-.14-1.2.07l11.28 10.14 2.88-2.88L4.38.17z" />
-          </svg>
+          <img src="/google-play-icon.png" alt="Google Play" class="w-6 h-6 shrink-0" />
           <div class="text-left">
             <div class="text-xs leading-none mb-0.5 opacity-70">Get it free on</div>
             <div class="text-sm font-bold leading-none">Google Play</div>
           </div>
         </a>
-        <p class="text-xs text-muted mt-3">Free download · No credit card · Works offline</p>
+        <p class="text-xs text-muted mt-3">Free download · 7-day free trial </p>
       </div>
     </div>
 
