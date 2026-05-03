@@ -412,7 +412,7 @@ const posts: BlogPost[] = [
             icon: "🤖",
             title: "AI Food Logging",
             description:
-              "Describe your meal in plain text. Get instant calorie and macro breakdown. Takes 10 seconds.",
+              "Just take a photo of your meal or describe what you ate in plain text. Get instant calorie and macro breakdown. Takes 10 seconds.",
           },
           {
             icon: "🧠",
@@ -743,7 +743,7 @@ const posts: BlogPost[] = [
       { type: "paragraph", html: "That's exactly why I built Caldef." },
       {
         type: "paragraph",
-        html: 'Just describe your meal in plain text — "two cups of rice and grilled chicken" — and the AI calculates your full nutritional breakdown instantly. No barcode scanning. No food databases. No guessing.',
+        html: 'Just take a photo of your meal or describe what you ate in plain text — "two cups of rice and grilled chicken" — and the AI calculates your full nutritional breakdown instantly. No food databases. No guessing.',
       },
       {
         type: "paragraph",

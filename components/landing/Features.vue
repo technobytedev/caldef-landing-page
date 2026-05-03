@@ -2,7 +2,7 @@
 const features = [
   {
     title: "AI Food Logging",
-    description: "Just type '2 cups of rice and grilled chicken' and our AI breaks down every macro instantly. It's the fastest way to track your meals.",
+    description: "Just take a photo of your meal or type '2 cups of rice and grilled chicken' and our AI breaks down every macro instantly. It's the fastest way to track your meals.",
     icon: "heroicons:cpu-chip",
   },
   {

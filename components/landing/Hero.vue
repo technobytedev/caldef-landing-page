@@ -1,6 +1,17 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+
 const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.cedricdev.diettracker";
+
+const images = ['/man-using-the-app.png', '/man-using-the-app2.png'];
+const currentImageIndex = ref(0);
+
+onMounted(() => {
+  setInterval(() => {
+    currentImageIndex.value = (currentImageIndex.value + 1) % images.length;
+  }, 3000);
+});
 
 const features = [
   { icon: "🍲", text: "AI Food Logging" },
@@ -34,8 +45,8 @@ const features = [
 
         <!-- Subheadline -->
         <p class="text-lg mt-6 text-muted max-w-xl leading-relaxed">
-          Just describe what you ate — our AI instantly breaks down every macro.
-          No barcode scanning. No food databases. Just you, your goals, and AI
+          Just take a photo of your meal or describe what you ate — our AI instantly breaks down every macro.
+         No food databases. Just you, your goals, and AI
           working together.
         </p>
 
@@ -93,7 +104,7 @@ const features = [
       <!-- RIGHT: hero image -->
       <div class="flex justify-center lg:justify-end">
         <img
-          src="/man-using-the-app.png"
+          :src="images[currentImageIndex]"
           alt="Man using the Caldef app"
           class="w-full max-w-sm lg:max-w-md xl:max-w-lg rounded-2xl shadow-2xl object-cover"
         />

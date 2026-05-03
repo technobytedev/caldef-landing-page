@@ -405,7 +405,7 @@ const categoryInfo = computed(() => (bmi.value ? getCategory(bmi.value) : null))
           <p class="text-muted text-sm leading-relaxed">
             If your BMI is above the healthy range, the most effective approach is tracking your calorie intake
             and creating a moderate calorie deficit. Caldef calculates your personal deficit target and lets you
-            log meals by simply describing what you ate — no barcode scanning required.
+            log meals by taking a photo of your meal or describe what you ate.
           </p>
         </div>
       </div>

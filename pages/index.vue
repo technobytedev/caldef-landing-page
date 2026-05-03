@@ -4,17 +4,17 @@ definePageMeta({ layout: "landing" });
 useSeoMeta({
   title: "Caldef — AI Calorie Tracker & Calorie Deficit Planner for Android",
   description:
-    "Track calories by describing your meal in plain text. Caldef uses AI to instantly calculate every macro — no barcode scanning needed. Free on Google Play.",
+    "Track calories by taking a photo of your meal or describing what you ate in plain text. Caldef uses AI to instantly calculate every macro — no barcode scanning needed. Free on Google Play.",
   ogTitle: "Caldef — AI Calorie Tracker & Calorie Deficit Planner",
   ogDescription:
-    "Just describe what you ate and our AI breaks down every macro instantly. Personalized calorie deficit, weight tracker, daily AI analysis. Free on Google Play.",
+    "Just take a photo of your meal or describe what you ate and our AI breaks down every macro instantly. Personalized calorie deficit, weight tracker, daily AI analysis. Free on Google Play.",
   ogType: "website",
   ogImage: "https://caldef.app/main-image.png",
   ogUrl: "https://caldef.app",
   twitterCard: "summary_large_image",
   twitterTitle: "Caldef — AI Calorie Tracker for Android",
   twitterDescription:
-    "Describe your meal, get the full macro breakdown instantly. No scanning. No databases. Just AI. Free on Google Play.",
+    "Take a photo of your meal or describe what you ate, get the full macro breakdown instantly. No scanning. No databases. Just AI. Free on Google Play.",
   twitterImage: "https://caldef.app/main-image.png",
 });
 
@@ -30,7 +30,7 @@ useHead({
         operatingSystem: "Android",
         applicationCategory: "HealthApplication",
         description:
-          "AI-powered calorie tracker and calorie deficit planner. Describe your meals in plain text and get an instant macro breakdown — no barcode scanning required.",
+          "AI-powered calorie tracker and calorie deficit planner. Take a photo of your meal or describe what you ate in plain text and get an instant macro breakdown — no barcode scanning required.",
         offers: {
           "@type": "Offer",
           price: "0",
